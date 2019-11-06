@@ -1,10 +1,7 @@
 language: python
 python:
-  - "3.5"      # current default Python on Travis CI
+  - "3.6"      # current default Python on Travis CI
 # command to install dependencies
-install:
-  - sudo dnf install python3
-  - pip install -r requirements.txt
 # command to run tests
 script:
   - pytest test_rpn.py
